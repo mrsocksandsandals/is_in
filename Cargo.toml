@@ -3,6 +3,14 @@ name = "is_in"
 version = "0.1.0"
 edition = "2021"
 
+# Publishing info.
+authors = ["Brett I. <notronaldmcdonald>"]
+description = "A nicer way to check if a value is in an array."
+readme = "README.md"
+homepage = "https://github.com/notronaldmcdonald/is_in"
+repository = "https://github.com/notronaldmcdonald/is_in"
+license = "MIT"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

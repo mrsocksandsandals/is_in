@@ -126,6 +126,26 @@ impl IsIn<i128> for i128 {
         false
     }
 }
+impl IsIn<f32> for f32 {
+    fn is_in(&self, arr: &[f32]) -> bool {
+        for i in arr {
+            if self == i {
+                return true;
+            }
+        }
+        false
+    }
+}
+impl IsIn<f64> for f64 {
+    fn is_in(&self, arr: &[f64]) -> bool {
+        for i in arr {
+            if self == i {
+                return true;
+            }
+        }
+        false
+    }
+}
 impl IsIn<char> for char {
     fn is_in(&self, arr: &[char]) -> bool {
         for i in arr {
