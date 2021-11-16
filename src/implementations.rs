@@ -16,7 +16,6 @@ impl IsIn<u8> for u8 {
         false
     }
 }
-
 impl IsIn<u16> for u16 {
     fn is_in(&self, arr: &[u16]) -> bool {
         for i in arr {
@@ -27,7 +26,6 @@ impl IsIn<u16> for u16 {
         false
     }
 }
-
 impl IsIn<u32> for u32 {
     fn is_in(&self, arr: &[u32]) -> bool {
         for i in arr {
@@ -38,7 +36,6 @@ impl IsIn<u32> for u32 {
         false
     }
 }
-
 impl IsIn<u64> for u64 {
     fn is_in(&self, arr: &[u64]) -> bool {
         for i in arr {
@@ -49,7 +46,6 @@ impl IsIn<u64> for u64 {
         false
     }
 }
-
 impl IsIn<usize> for usize {
     fn is_in(&self, arr: &[usize]) -> bool {
         for i in arr {
@@ -60,7 +56,6 @@ impl IsIn<usize> for usize {
         false
     }
 }
-
 impl IsIn<i8> for i8 {
     fn is_in(&self, arr: &[i8]) -> bool {
         for i in arr {
@@ -71,7 +66,6 @@ impl IsIn<i8> for i8 {
         false
     }
 }
-
 impl IsIn<i16> for i16 {
     fn is_in(&self, arr: &[i16]) -> bool {
         for i in arr {
@@ -82,7 +76,6 @@ impl IsIn<i16> for i16 {
         false
     }
 }
-
 impl IsIn<i32> for i32 {
     fn is_in(&self, arr: &[i32]) -> bool {
         for i in arr {
@@ -93,7 +86,6 @@ impl IsIn<i32> for i32 {
         false
     }
 }
-
 impl IsIn<i64> for i64 {
     fn is_in(&self, arr: &[i64]) -> bool {
         for i in arr {
@@ -104,7 +96,6 @@ impl IsIn<i64> for i64 {
         false
     }
 }
-
 impl IsIn<isize> for isize {
     fn is_in(&self, arr: &[isize]) -> bool {
         for i in arr {
@@ -115,7 +106,6 @@ impl IsIn<isize> for isize {
         false
     }
 }
-
 impl IsIn<u128> for u128 {
     fn is_in(&self, arr: &[u128]) -> bool {
         for i in arr {
@@ -126,7 +116,6 @@ impl IsIn<u128> for u128 {
         false
     }
 }
-
 impl IsIn<i128> for i128 {
     fn is_in(&self, arr: &[i128]) -> bool {
         for i in arr {
@@ -137,7 +126,6 @@ impl IsIn<i128> for i128 {
         false
     }
 }
-
 impl IsIn<char> for char {
     fn is_in(&self, arr: &[char]) -> bool {
         for i in arr {
@@ -148,4 +136,3 @@ impl IsIn<char> for char {
         false
     }
 }
-
