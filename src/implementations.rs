@@ -156,3 +156,13 @@ impl IsIn<char> for char {
         false
     }
 }
+impl IsIn<&str> for &str {
+    fn is_in(&self, arr: &[&str]) -> bool {
+        for i in arr {
+            if self == i {
+                return true;
+            }
+        }
+        false
+    }
+}
