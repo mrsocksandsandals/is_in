@@ -10,10 +10,11 @@
 //! use is_in::IsIn;
 //!
 //! fn main() {
-//!     let data: &[u8; 3] = [1, 2, 3];
+//!     let data: &[u8; 3] = &[1, 2, 3];
 //!     let two: u8 = 2;
 //!     println!("{}", two.is_in(data)); // prints true
-//! }```
+//! }
+//! ```
 //! The crate provides implementations on most primitives (all unsigned integers, all signed integers, floats, and chars).
 #![deny(missing_docs)]
 
@@ -24,8 +25,11 @@ pub use implementations::*;
 /// The IsIn trait.
 /// ### Implementing `IsIn`:
 /// ```rust
+/// #[derive(PartialEq, Eq)]
+/// struct MyStruct(u8);
+/// use is_in::IsIn;
 /// impl IsIn<MyStruct> for MyStruct {
-///     fn is_in(&self, arr: &[MyType]) -> bool {
+///     fn is_in(&self, arr: &[MyStruct]) -> bool {
 ///         for i in arr {
 ///             if self == i {
 ///                 return true;
@@ -33,7 +37,8 @@ pub use implementations::*;
 ///         }
 ///         false
 ///     }
-/// }```
+/// }
+/// ```
 pub trait IsIn<T> {
     /// The method used to check if a value is in an array.
     fn is_in(&self, arr: &[T]) -> bool;
